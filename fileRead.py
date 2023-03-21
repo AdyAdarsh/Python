@@ -1,31 +1,24 @@
-# Open and writing a new file in python:
 file = open("NewFile.txt", 'w')
-# this line will be written in the new file.
+
 writing_file = "This is the content which is written on the file" \
                "\nHello Bootstrap"
-writeFile = file.write(writing_file)  # to write in the file
-file.close()  # closing file
-
-# opening file and reading file in python:
+writeFile = file.write(writing_file) 
+file.close()  
 file = open("NewFile.txt", "r")
-print(file.read())  # reading all the lines of the file
-file.close()  # closing file
+print(file.read())  
+file.close()  
 print()
 file = open("NewFile.txt", "r")
-print(file.readlines())  # printing lines as list
-file.close()  # closing file
+print(file.readlines())  
+file.close() 
 print()
 file = open("NewFile.txt", "r")
-print(file.readline())  # printing only first line - ending the pointer at the end of the 1st line after reading
-print(file.readline(5))  # giving the index to print the line
-file.close()  # closing file
-
-# finding the length of the text file (total characters)
+print(file.readline())  
+print(file.readline(5)) 
+file.close()  
 file = open("NewFile.txt", 'r')
-print(len(file.read()))  # calculating the length of the text file "characters in file"
-file.close()  # closing file
-
-# finding the length of the text file (total lines in the file)
+print(len(file.read()))  
+file.close()  
 file = open("NewFile.txt", 'r')
-print(len(file.readlines()))  # calculating the length of the text file "lines in file"
-file.close()  # closing file
+print(len(file.readlines()))  
+file.close()  
